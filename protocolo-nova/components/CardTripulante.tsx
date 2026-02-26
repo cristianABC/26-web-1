@@ -16,6 +16,8 @@ export default function CardTripulante({ user }: { user: Tripulante }) {
       <Image 
         src={user.image} 
         alt={user.firstName} 
+        width={400}
+        height={128}
         className="mb-4 h-32 w-full rounded-lg object-cover grayscale group-hover:grayscale-0" 
       />
       <h3 className="font-mono text-lg font-bold text-emerald-400">
@@ -42,7 +44,13 @@ export default function CardTripulante({ user }: { user: Tripulante }) {
           
           <div className="grid gap-4 py-4">
             <div className="flex items-center gap-4">
-              <Image alt='user image' src={user.image} className="h-20 w-20 rounded-full border-2 border-emerald-500" />
+              <Image
+                alt="user image"
+                src={user.image}
+                width={80}
+                height={80}
+                className="h-20 w-20 rounded-full border-2 border-emerald-500"
+              />
               <div>
                 <p className="text-xl font-bold">{user.firstName} {user.lastName}</p>
                 <p className="text-sm text-emerald-500/70">{user.email}</p>
