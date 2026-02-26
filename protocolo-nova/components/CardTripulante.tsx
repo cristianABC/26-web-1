@@ -14,7 +14,7 @@ export default function CardTripulante({ user }: { user: Tripulante }) {
     <div className="group relative rounded-xl border border-slate-800 bg-slate-900/50 p-4 transition-all hover:border-emerald-500/50">
       {/* Avatar y Datos Básicos */}
       <Image 
-        src={user.image} 
+        src={'https://picsum.photos/200/300'} 
         alt={user.firstName} 
         width={400}
         height={128}

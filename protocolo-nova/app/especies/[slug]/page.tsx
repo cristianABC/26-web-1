@@ -5,6 +5,7 @@ export default async function EspecieDetallePage({
 }) {
   const { slug } = await params;
   // Aquí el parámetro 'slug' es parte de la URL, no del ?query
+  // Path params species/Alien/ 
 
   //1. Consumir la api GET https://rickandmortyapi.com/api/character/?species=${slug}
   //2. Asignar la respuesta 
